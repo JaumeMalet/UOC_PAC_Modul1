@@ -6,45 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacte</title>
 </head>
-<body>    
-    <section name="inici">
-        <article name="navegacio">
-            <div><a href="index.html">Inici</a></div>
-            <div><a href="cv.html">CV</a></div>
-            <div><a href="contacte.html">Contacte</a></div>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inici</a>
+                </li>
+                <li>
+                    <a href="cv.html">CV</a>
+                </li>
+                <li>
+                    <a href="contacte.html">Contacte</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <article>
+            <h1>Contacte</h1>
+            <img src="assets/img/Imatge2.jpg">
         </article>
-        <article name="contacte">
-            <h2>Contacte</h2>
-            <img src="assets/img/Imatge21.jpg">
-        </article>
-        <article name="parlem">
+    </section>
+    <section id="parlem">
+        <form action="">
             <h2>Parlem!</h2>
-            <div>
-                <label for="nom">Nom:</label>
-                <input id="nom" type="text">                
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input id="email" type="text">                
-            </div>
-            <div>
-                <label for="missatge">Escriu aquí el que vulguis:</label>
-                <textarea id="missatge" rows="10" cols="30">                    
-                </textarea>              
-            </div>
-            <div>
-                <input type="checkbox" name="termes" id="termes">
-                <label for="termes">He llegit i accepto la política de privacitat</label>
-            </div>
+            <label for="nom">Nom:</label>
+            <input id="nom" type="text"> 
+
+            <label for="email">Email:</label>
+            <input id="email" type="text">      
+
+            <label for="missatge">Escriu aquí el que vulguis:</label>
+            <textarea id="missatge" rows="10" cols="30">                                 
+            </textarea>
+
+            <input type="checkbox" name="termes" id="termes">
+            <label for="termes">He llegit i accepto la política de privacitat</label>
             <button type="submit">Enviar</button>
-        </article>
+        </form>
     </section>
-    <section name="peu">
-        <article name="social">
-            <img src="assets/img/twitter.jpg">
-            <img src="assets/img/instagram.jpg">
-            <img src="assets/img/linkedin.jpg">
-        </article>
-    </section>
+    <footer>
+        <img src="assets/img/twitter.jpg">
+        <img src="assets/img/instagram.jpg">
+        <img src="assets/img/linkedin.jpg">
+    </footer>
 </body>
 </html>
