@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacte</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -25,31 +26,32 @@
     <section id="hero">
         <article>
             <h1>Contacte</h1>
-            <img src="assets/img/Imatge2.jpg">
+            <img src="assets/img/Imatge2.jpg" alt="">
         </article>
     </section>
     <section id="parlem">
+        <h2>Parlem!</h2>
         <form action="">
-            <h2>Parlem!</h2>
-            <label for="nom">Nom:</label>
-            <input id="nom" type="text"> 
+            <label for="f_nom">Nom:</label>
+            <input type="text" name="nom" id="f_nom" placeholder="Nom..."> 
 
-            <label for="email">Email:</label>
-            <input id="email" type="text">      
+            <label for="f_email">Email:</label>
+            <input type="email" name="email" id="f_email" placeholder="e-mail...">      
 
-            <label for="missatge">Escriu aquí el que vulguis:</label>
-            <textarea id="missatge" rows="10" cols="30">                                 
+            <label for="f_missatge">Escriu aquí el que vulguis:</label>
+            <textarea name="missatge" id="f_missatge" rows="10" cols="30">                                 
             </textarea>
 
-            <input type="checkbox" name="termes" id="termes">
-            <label for="termes">He llegit i accepto la política de privacitat</label>
-            <button type="submit">Enviar</button>
+            <input type="checkbox" name="termes" id="f_termes">
+            <label for="f_termes">He llegit i accepto la política de privacitat</label>
+
+            <input type="submit" value="Enviar">
         </form>
     </section>
     <footer>
-        <img src="assets/img/twitter.jpg">
-        <img src="assets/img/instagram.jpg">
-        <img src="assets/img/linkedin.jpg">
+        <img src="assets/img/twitter.jpg" alt="">
+        <img src="assets/img/instagram.jpg" alt="">
+        <img src="assets/img/linkedin.jpg" alt="">
     </footer>
 </body>
 </html>
