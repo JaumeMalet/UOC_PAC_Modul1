@@ -1,8 +1,123 @@
-header {
-    background-color: black;
+html 
+{
+    scroll-behavior: smooth; /* fa que els salts entre enllaços siguis suaus */
+}
+body
+{
+    margin: 0; /* elimina espai blanc entre contingut i les vores del viewport (pantalla) */
+    font-size: 16px;
+    font-family: Tahoma, sans-serif;
+}
+header 
+{
+    display: flex; /* permet posicionar el contingut dels elements fills */
+    justify-content: space-between; /* provar amb altres alternatives: center, space-evenly, flex-start, flex-end i veure què passa */
+    align-items: center;
+    background-color: lightblue; /* color de fons */
+    padding: 0.75rem;
+}
+header ul 
+{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none; /* elimina els punts de la llista (provar què passa si es treu) */
+    gap: 1rem;
+    margin-right: 1rem;
+}
+header a 
+{
+    color: black; /* color de la lletra */
+    font-weight: bold;
+    text-decoration: none; /* decoració del text. Prova què passa si es treu */
+}
+.titol
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* es força una alçada */
+    color: whitesmoke;
+    font-size: 2rem;
+    /* background-image: url("/assets/img/Imatge1.jpg"); */
+    background-image: url(https://picsum.photos/900/200);
+    background-size: cover; /* forçar que la imatge de fons cobreixi tot l'espai del seu contenidor */
+    margin-block-start: 0px; /* corregeix l'espai entre header i titol */
+}
+h2
+{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.index ul
+{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: auto;
+    list-style: none;
+    padding-inline-start: 0px; /* corregeix l'espai que hi ha a l'esquerra */
+}
+.index a
+{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+}
+.fons-fosc
+{
+    background-color: lightblue;
+}
+section 
+{
+    padding: 2rem ;
+}
+.dades div
+{
+    text-align: center;
+}
+.idiomes table
+{
+    margin: auto; /* centrat automàtic */
+    border: 3px solid black;
+}
+.idiomes td
+{ 
+    border: 1px solid black;
+    text-align: center;
+    padding: 1rem; /* espai entre les vores i el contingut */
+}
+section > * 
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70vw; /* es permet una amplada màxima del 80% de la mida del viewport o pantalla */
+}
+footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    background-color: lightblue;
 }
 
-.titol {
-    font-size: 2rem;
-    color: red;
-  }
+/* contacte.html */
+.parlem form
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw;
+}
+.parlem form input,
+.parlem form textarea
+{
+    margin-bottom: 1rem;
+}
+.parlem .boto
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

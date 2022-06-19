@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacte</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
+        <img src="assets/img/home.svg" alt="Inici">
         <nav>
             <ul>
                 <li>
@@ -23,35 +24,34 @@
             </ul>
         </nav>
     </header>
-    <section id="hero">
-        <article>
-            <h1>Contacte</h1>
-            <img src="assets/img/Imatge2.jpg" alt="">
-        </article>
+    <section class="titol">
+        <h1>Contacte</h1>
     </section>
-    <section id="parlem">
+    <section class="parlem">
         <h2>Parlem!</h2>
         <form action="">
-            <label for="f_nom">Nom:</label>
+            <label for="f_nom"><strong>Nom:</strong></label>
             <input type="text" name="nom" id="f_nom" placeholder="Nom..."> 
 
-            <label for="f_email">Email:</label>
+            <label for="f_email"><strong>Email:</strong></label>
             <input type="email" name="email" id="f_email" placeholder="e-mail...">      
 
-            <label for="f_missatge">Escriu aquí el que vulguis:</label>
+            <label for="f_missatge"><strong>Escriu aquí el que vulguis:</strong></label>
             <textarea name="missatge" id="f_missatge" rows="10" cols="30">                                 
             </textarea>
-
-            <input type="checkbox" name="termes" id="f_termes">
-            <label for="f_termes">He llegit i accepto la política de privacitat</label>
-
-            <input type="submit" value="Enviar">
+            <div>
+                <input type="checkbox" name="termes" id="f_termes">
+                <label for="f_termes">He llegit i accepto la <a href="#">política de privacitat</a></label>
+            </div>
+            <div class="boto">
+                <input type="submit" value="Enviar">
+            </div>
         </form>
     </section>
     <footer>
-        <img src="assets/img/twitter.jpg" alt="">
-        <img src="assets/img/instagram.jpg" alt="">
-        <img src="assets/img/linkedin.jpg" alt="">
+        <img src="assets/img/logo-twitter.svg" alt="" width="50" height="50">
+        <img src="assets/img/logo-instagram.svg" alt="" width="50" height="50">
+        <img src="assets/img/logo-linkedin.svg" alt="" width="50" height="50">
     </footer>
 </body>
 </html>
