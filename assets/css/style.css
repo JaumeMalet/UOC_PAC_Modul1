@@ -37,8 +37,8 @@ body
     justify-content: center;
     align-items: center;
     height: 300px; /* es força una alçada */
-    background-image: url("/assets/img/Imatge4.jpg");
-    /* background-image: url(https://picsum.photos/900/200); */
+    /* background-image: url("/assets/img/Imatge4.jpg"); */
+    background-image: url(https://picsum.photos/900/200);
     background-size: cover; /* forçar que la imatge de fons cobreixi tot l'espai del seu contenidor */
     margin-block-start: 0px; /* corregeix l'espai entre header i titol */
 }
