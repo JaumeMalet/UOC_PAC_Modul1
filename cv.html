@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>CV Jaume</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <header class="Navbar">
         <img src="assets/img/home.svg" alt="Inici">
@@ -30,10 +32,21 @@
     <section class="index">
         <h2>Index</h2>
         <ul>
-            <li><a href="#dades"><img src="assets/img/contact.svg" alt="" width="20" height="20"><span>Dades personals</span></a></li>
-            <li><a href="#idiomes"><img src="assets/img/lang.svg" alt="" width="20" height="20"><span>Idiomes</span></a></li>
-            <li><a href="#estudis"><img src="assets/img/books.svg" alt="" width="20" height="20"><span>Estudis</span></a></li>
-            <li><a href="#laboral"><img src="assets/img/linkedin.jpg" alt="" width="20" height="20"><span>Laboral</span></a></li>
+            <li>
+                <a href="#dades">
+                    <img src="assets/img/contact.svg" alt="" width="20" height="20">
+                    <span>Dades personals</span>
+                    <!-- no hace falta este span -->
+                </a>
+            </li>
+            <!-- Cuando se hace código se debe pensar que otras personas ven el código por eso hay que tabularlo y ponerle sangrias
+            una extension que te hace eso automaticamente es Prettier -->
+            <li><a href="#idiomes"><img src="assets/img/lang.svg" alt="" width="20" height="20"><span>Idiomes</span></a>
+            </li>
+            <li><a href="#estudis"><img src="assets/img/books.svg" alt="" width="20"
+                        height="20"><span>Estudis</span></a></li>
+            <li><a href="#laboral"><img src="assets/img/linkedin.jpg" alt="" width="20"
+                        height="20"><span>Laboral</span></a></li>
         </ul>
     </section>
     <section class="dades fons-fosc">
@@ -46,53 +59,80 @@
     </section>
     <section class="idiomes">
         <h2>Idiomes</h2>
-        <table>
-            <tr>
-                <td><strong>Idioma</strong></td>
-                <td><strong>Nivell baix</strong></td>
-                <td><strong>Nivell mig</strong></td>
-                <td><strong>Nivell alt</strong></td>
-                <td><strong>Natiu</strong></td>
-            </tr>
-            <tr>
-                <td>Català</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>X</td>
-            </tr>
-            <tr>
-                <td>Espanyol</td>
-                <td></td>
-                <td></td>
-                <td>X</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Anglès</td>
-                <td></td>
-                <td>X</td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
+        <!-- Esta tabla esta rompiendo el diseño en formato móvil, cuando hay tablas muy grandes un truco es envolverlas en
+        un capa con overflow-y:scroll. -->
+
+        <div class="idiomes__container">
+            <table>
+                <tr>
+                    <!-- cuando se tiene dar a muchos elementos un estilo como a estas td, es mejor hacer por css, font-weight: bold; -->
+                    <td><strong>Idioma</strong></td>
+                    <td><strong>Nivell baix</strong></td>
+                    <td><strong>Nivell mig</strong></td>
+                    <td><strong>Nivell alt</strong></td>
+                    <td><strong>Natiu</strong></td>
+                </tr>
+                <tr>
+                    <td>Català</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Espanyol</td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Anglès</td>
+                    <td></td>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
     </section>
     <section class="estudis fons-fosc">
         <h2 id="estudis">Estudis</h2>
         <ul>
-            <li><p><strong>B.U.P. i C.O.U.</strong><br>Institut Jaume Callís.</p></li>
-            <li><p><strong>Enginyeria Tècnica Industrial esp. Electrònica Industrial</strong><br>Universitat Vic (UVIC).</p></li>
-            <li><p><strong>Enginyeria en Organització Industrial</strong><br>Universitat Politècnica de Catalunya (UPC).</p></li>
+            <li>
+                <!-- no hace falta poner una <p></p> -->
+                <p><strong>B.U.P. i C.O.U.</strong><br>Institut Jaume Callís.</p>
+            </li>
+            <li>
+                <p><strong>Enginyeria Tècnica Industrial esp. Electrònica Industrial</strong><br>Universitat Vic (UVIC).
+                </p>
+            </li>
+            <li>
+                <p><strong>Enginyeria en Organització Industrial</strong><br>Universitat Politècnica de Catalunya (UPC).
+                </p>
+            </li>
         </ul>
     </section>
     <section class="laboral">
-        <h2 id="laboral">Laboral</h2>        
+        <h2 id="laboral">Laboral</h2>
         <ul>
-            <li><p><strong>Omicron circuits</strong> (<i>Manlleu</i>, 2005 a 2006)<br>Project Leader Europa central. Coordinació fabricació circuits impresos del sector automoció.</p></li>
-            <li><p><strong>Montronic S.L.</strong> (<i>Vic</i>, 2006 a 2010)<br>Project Leader assemblatge circuits impresos.</p></li>
-            <li><p><strong>Elausa S.A.</strong> (<em>Vic</em>, 2010-2018)<br>Enginyeria de procés de producció en fàbrica d'assemblatge electrònic. Programació de màquines de test.</p></li>
-            <li><p><strong>Triskel S.L.</strong> (<em>Taradell</em>, 2018-Actualitat)<br>Enginyer de software full-stack. Disseny de circuits electrònics.</p></li>
-        </ul>            
+            <li>
+                <p><strong>Omicron circuits</strong> (<i>Manlleu</i>, 2005 a 2006)<br>Project Leader Europa central.
+                    Coordinació fabricació circuits impresos del sector automoció.</p>
+            </li>
+            <li>
+                <p><strong>Montronic S.L.</strong> (<i>Vic</i>, 2006 a 2010)<br>Project Leader assemblatge circuits
+                    impresos.</p>
+            </li>
+            <li>
+                <p><strong>Elausa S.A.</strong> (<em>Vic</em>, 2010-2018)<br>Enginyeria de procés de producció en
+                    fàbrica d'assemblatge electrònic. Programació de màquines de test.</p>
+            </li>
+            <li>
+                <p><strong>Triskel S.L.</strong> (<em>Taradell</em>, 2018-Actualitat)<br>Enginyer de software
+                    full-stack. Disseny de circuits electrònics.</p>
+            </li>
+        </ul>
     </section>
     <footer>
         <img src="assets/img/twitter.png" alt="" width="40" height="32">
@@ -100,4 +140,5 @@
         <img src="assets/img/instagram.png" alt="" width="36" height="36">
     </footer>
 </body>
+
 </html>
