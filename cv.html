@@ -26,31 +26,34 @@
             </ul>
         </nav>
     </header>
-    <section class="titol">
-        <h1>Currículum Vitae</h1>
-    </section>
+    <h1 class="titol">Currículum Vitae</h1>
     <section class="index">
-        <h2>Index</h2>
+        <h2 id="index">Index</h2>
         <ul>
             <li>
                 <a href="#dades">
-                    <img src="assets/img/contact.svg" alt="" width="20" height="20">
-                    <span>Dades personals</span>
-                    <!-- no hace falta este span -->
+                    <img src="assets/img/contact.svg" alt="arroba" width="20" height="20">Dades personals
                 </a>
             </li>
-            <!-- Cuando se hace código se debe pensar que otras personas ven el código por eso hay que tabularlo y ponerle sangrias
-            una extension que te hace eso automaticamente es Prettier -->
-            <li><a href="#idiomes"><img src="assets/img/lang.svg" alt="" width="20" height="20"><span>Idiomes</span></a>
+            <li>
+                <a href="#idiomes">
+                    <img src="assets/img/lang.svg" alt="lletra xina" width="20" height="20">Idiomes
+                </a>
             </li>
-            <li><a href="#estudis"><img src="assets/img/books.svg" alt="" width="20"
-                        height="20"><span>Estudis</span></a></li>
-            <li><a href="#laboral"><img src="assets/img/linkedin.jpg" alt="" width="20"
-                        height="20"><span>Laboral</span></a></li>
+            <li>
+                <a href="#estudis">
+                    <img src="assets/img/books.svg" alt="llibres" width="20" height="20">Estudis
+                </a>
+            </li>
+            <li>
+                <a href="#laboral">
+                    <img src="assets/img/linkedin.jpg" alt="logo linkedin" width="20" height="20">Laboral
+                </a>
+            </li>
         </ul>
     </section>
     <section class="dades fons-fosc">
-        <h2>Dades personals</h2>
+        <h2 id="dades">Dades personals</h2>
         <div>
             <p><strong>Nom i cognoms:</strong> Joan Prat Sabaté</p>
             <p><strong>Data i lloc de naixement:</strong> 21/08/1978 - Vic</p>
@@ -58,19 +61,15 @@
         </div>
     </section>
     <section class="idiomes">
-        <h2>Idiomes</h2>
-        <!-- Esta tabla esta rompiendo el diseño en formato móvil, cuando hay tablas muy grandes un truco es envolverlas en
-        un capa con overflow-y:scroll. -->
-
+        <h2 id="idiomes">Idiomes</h2>
         <div class="idiomes__container">
             <table>
                 <tr>
-                    <!-- cuando se tiene dar a muchos elementos un estilo como a estas td, es mejor hacer por css, font-weight: bold; -->
-                    <td><strong>Idioma</strong></td>
-                    <td><strong>Nivell baix</strong></td>
-                    <td><strong>Nivell mig</strong></td>
-                    <td><strong>Nivell alt</strong></td>
-                    <td><strong>Natiu</strong></td>
+                    <td class="negreta">Idioma</strong></td>
+                    <td class="negreta">Nivell baix</strong></td>
+                    <td class="negreta">Nivell mig</strong></td>
+                    <td class="negreta">Nivell alt</strong></td>
+                    <td class="negreta">Natiu</strong></td>
                 </tr>
                 <tr>
                     <td>Català</td>
@@ -100,16 +99,16 @@
         <h2 id="estudis">Estudis</h2>
         <ul>
             <li>
-                <!-- no hace falta poner una <p></p> -->
-                <p><strong>B.U.P. i C.O.U.</strong><br>Institut Jaume Callís.</p>
+                <strong>B.U.P. i C.O.U.</strong>
+                <br>Institut Jaume Callís.
             </li>
             <li>
-                <p><strong>Enginyeria Tècnica Industrial esp. Electrònica Industrial</strong><br>Universitat Vic (UVIC).
-                </p>
+                <strong>Enginyeria Tècnica Industrial esp. Electrònica Industrial</strong>
+                <br>Universitat Vic (UVIC).
             </li>
             <li>
-                <p><strong>Enginyeria en Organització Industrial</strong><br>Universitat Politècnica de Catalunya (UPC).
-                </p>
+                <strong>Enginyeria en Organització Industrial</strong>
+                <br>Universitat Politècnica de Catalunya (UPC).
             </li>
         </ul>
     </section>
@@ -117,27 +116,38 @@
         <h2 id="laboral">Laboral</h2>
         <ul>
             <li>
-                <p><strong>Omicron circuits</strong> (<i>Manlleu</i>, 2005 a 2006)<br>Project Leader Europa central.
-                    Coordinació fabricació circuits impresos del sector automoció.</p>
+                <strong>Omicron circuits</strong> (<i>Manlleu</i>, 2005 a 2006)
+                <br>Project Leader Europa central. Coordinació fabricació circuits impresos del 
+                sector automoció.
             </li>
             <li>
-                <p><strong>Montronic S.L.</strong> (<i>Vic</i>, 2006 a 2010)<br>Project Leader assemblatge circuits
-                    impresos.</p>
+                <strong>Montronic S.L.</strong> (<i>Vic</i>, 2006 a 2010)
+                <br>Project Leader assemblatge circuits impresos.
             </li>
             <li>
-                <p><strong>Elausa S.A.</strong> (<em>Vic</em>, 2010-2018)<br>Enginyeria de procés de producció en
-                    fàbrica d'assemblatge electrònic. Programació de màquines de test.</p>
+                <strong>Elausa S.A.</strong> (<em>Vic</em>, 2010-2018)
+                <br>Enginyeria de procés de producció en fàbrica d'assemblatge electrònic. 
+                Programació de màquines de test.
             </li>
             <li>
-                <p><strong>Triskel S.L.</strong> (<em>Taradell</em>, 2018-Actualitat)<br>Enginyer de software
-                    full-stack. Disseny de circuits electrònics.</p>
+                <strong>Triskel S.L.</strong> (<em>Taradell</em>, 2018-Actualitat)
+                <br>Enginyer de software full-stack. Disseny de circuits electrònics.
             </li>
         </ul>
     </section>
     <footer>
-        <img src="assets/img/twitter.png" alt="" width="40" height="32">
-        <img src="assets/img/linkedin.png" alt="" width="36" height="36">
-        <img src="assets/img/instagram.png" alt="" width="36" height="36">
+        <!-- Los link a redes sociales deben llevarte a dichas páginas por eso siempre se usan los anchor <a></a>
+        estos anchor deberán tener el atributo rel (más info => https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel)
+        y el atributo target (más info => https://developer.mozilla.org/es/docs/Web/HTML/Element/a#attr-target) -->
+        <a href="https://twitter.com/?lang=es" target='_blank' rel='noopener noreferrer'>
+            <img src="assets/img/twitter.png" alt="twitter" width="40" height="32">
+        </a>
+        <a href="https://es.linkedin.com/" target='_blank' rel='noopener noreferrer'>
+            <img src="assets/img/linkedin.png" alt="linkedin" width="36" height="36">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/img/instagram.png" alt="instagram" width="36" height="36">
+        </a>
     </footer>
 </body>
 

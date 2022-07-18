@@ -4,10 +4,12 @@
 *::before {
 	box-sizing: border-box; /* En la mida de la caixa ja s'inclou el marc */
 }
+
 /* espacios entre regla y regla */
 html {
 	scroll-behavior: smooth; /* Fa que els salts entre enllaços siguis suaus */
 }
+
 /* Para mayor legibilidad las etiquetas que no tienen clases todas van primero, luego las que tiene clases 
 y por ultimo las media queries */
 body {
@@ -15,6 +17,37 @@ body {
 	font-size: 16px; /* Mida de la lletra */
 	font-family: Tahoma, sans-serif; /* Tipus de lletra */
 }
+
+h1 {
+	color: #000000;
+	font-size: 2.5rem;
+	font-weight: 600;
+	text-shadow: 0px 0px 4px #ffffff;
+}
+
+h2 {
+	text-align: center;
+	font-size: 2rem;
+}
+
+section {
+	padding: 2rem;
+}
+
+section > *     /* Per a tots els fills de 'section' */ {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	padding: 2rem;
+	background-color: #222;
+}
+
 /* Barra de navegació */
 .Navbar {
 	display: flex; /* Permet posicionar el contingut dels elements fills */
@@ -23,6 +56,7 @@ body {
 	background-color: #222222; /* color de fons */
 	padding: 0rem 1.5rem; /* Espai entre el contingut i el marge de la caixa */
 }
+
 .Navbar ul {
 	display: flex;
 	justify-content: flex-end;
@@ -30,11 +64,13 @@ body {
 	gap: 1rem;
 	margin-right: 1rem; /* Espai a la dreta del menú de navegació */
 }
+
 .Navbar a {
 	color: #ffffff; /* Color de la lletra */
 	font-weight: 500;
 	text-decoration: none; /* Decoració del text. Prova què passa si es treu */
 }
+
 .titol {
 	display: flex; /* Títol centrat en la imatge */
 	justify-content: center;
@@ -44,31 +80,8 @@ body {
 	background-size: cover; /* Forçar que la imatge de fons cobreixi tot l'espai del seu contenidor */
 	margin-block-start: 0px; /* Es corregeix l'espai entre el header i el títol */
 }
-h1 {
-	color: #000000;
-	font-size: 2.5rem;
-	font-weight: 600;
-	text-shadow: 0px 0px 4px #ffffff;
-}
-h2 {
-	text-align: center;
-	font-size: 2rem;
-}
-section {
-	padding: 2rem;
-}
-section > *     /* Per a tots els fills de 'section' */ {
-	margin-left: auto;
-	margin-right: auto;
-}
-footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 3rem;
-	padding: 2rem;
-	background-color: #222;
-}
+
+
 
 /*  Específiques per la pàgina index.html */
 .presentacio article {
@@ -80,6 +93,7 @@ footer {
 	gap: 99px;
 	margin: 0rem 3rem;
 }
+
 .projectes ul {
 	/* display: flex; */
 	/* justify-content: center; */
@@ -91,6 +105,7 @@ footer {
 	margin: 2rem 0rem; /* Afegir només marge superior i inferior */
 	padding-inline-start: 0px; /* Eliminar els 40px que se li donen de padding esquerra per defecte */
 }
+
 .projectes ul li {
 	display: flex;
 	flex-direction: column;
@@ -100,10 +115,12 @@ footer {
 	overflow: hidden; /* Retalla imatge si sobresurt dels limits d'un div */
 	box-shadow: 0 0 15px 10px #555; /* Ombra sota la caixa */
 }
+
 .projectes ul li p {
 	padding: 1.5rem;
 	margin: 0px;
 }
+
 .projectes ul li button {
 	background-color: #222222;
 	color: #ffffff;
@@ -111,12 +128,14 @@ footer {
 	border-radius: 6px;
 	margin: 0rem 3rem 1rem 3rem;
 }
+
 .experiencia {
 	background-color: #222222;
 	color: #ffffff;
 	padding-left: 0px;
 	padding-right: 0px;
 }
+
 .experiencia ul {
 	/* display: flex; */
 	/* justify-content: space-around; */
@@ -127,6 +146,7 @@ footer {
 	margin: 6rem 0rem 2rem 0rem;
 	padding-inline-start: 0px;
 }
+
 .experiencia ul li {
 	display: flex;
 	justify-content: center;
@@ -137,12 +157,15 @@ footer {
 	font-size: 4vw; /* Mida de la lletra 4% de la mida del viewport o pantalla */
 	background-size: cover; /* Es permet que la imatge cobreixi l'espai que se l'hi ha destinat */
 }
+
 .html {
 	background-image: url('/assets/img/Ellipse1.png');
 }
+
 .css {
 	background-image: url('/assets/img/Ellipse2.png');
 }
+
 .js {
 	background-image: url('/assets/img/Ellipse3.png');
 }
@@ -150,6 +173,7 @@ footer {
 .aficions h2 {
 	margin: 2rem 0rem 4rem 0rem;
 }
+
 .aficions ul {
 	/* display: flex; */
 	/* justify-content: center; */
@@ -159,6 +183,7 @@ footer {
 	gap: 3rem;
 	padding: 1rem;
 }
+
 .aficions ul li {
 	display: flex;
 	background-color: #d9d9d9;
@@ -168,6 +193,7 @@ footer {
 	justify-content: space-between;
 	border-radius: 6px;
 }
+
 .aficions ul li p {
 	width: 9.5rem;
 	text-align: center;
@@ -175,9 +201,12 @@ footer {
 	font-weight: 600;
 	margin-left: 1.5rem;
 }
+
 .aficions ul li div {
 	margin-right: 1.5rem;
 }
+
+
 
 /* Específiques per la pàgina cv.html */
 .index ul {
@@ -190,18 +219,22 @@ footer {
 	list-style: none;
 	padding-inline-start: 0px; /* Corregeix l'espai que hi ha a l'esquerra */
 }
+
 .index a {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
 	text-decoration: none;
 }
+
 .fons-fosc {
 	background-color: lightgray;
 }
+
 .dades div {
 	text-align: center;
 }
+
 .idiomes table {
 	margin: auto; /* centrat automàtic */
 	border: 3px solid black;
@@ -210,6 +243,7 @@ footer {
 
 .idiomes__container {
 	overflow-x: scroll;
+	overflow-y: scroll;
 }
 
 .idiomes td {
@@ -218,31 +252,40 @@ footer {
 	padding: 1rem; /* Espai entre les vores i el contingut */
 }
 
+.idiomes td.negreta {
+	font-weight: bold;
+}
+
 /*  Específiques per la pàgina contacte.html */
 .parlem form {
 	display: flex;
 	flex-direction: column;
 	max-width: 40vw; /* Es permet una amplada màxima del 40% de la mida del viewport o pantalla */
 }
+
 .parlem form input,
 .parlem form textarea {
 	margin-bottom: 1rem;
 }
+
 .parlem .privacitat {
 	margin-bottom: 1rem;
 }
+
 .parlem .boto {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
+
+
 /* Media queries Desktop-first*/
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+/* @media only screen and (min-width: 1200px) {
+} */
 
-/* no se debe dejar reglqas vacias, borrala si no se usa */
+/* no se debe dejar reglas vacias, borrala si no se usa */
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1200px) {
@@ -259,20 +302,23 @@ footer {
 		flex-direction: column-reverse; /* Presentem la foto abans que el text */
 		gap: 1rem; /* Espai entre la foto i el text */
 	}
+
 	.projectes ul {
 		grid-template-columns: repeat(2, 1fr); /* Passema a 2 columnes en el grid de projectes */
 	}
+
 	.projectes ul li {
 		max-width: 35vw; /* Al tenir dues columnes, canviem la relació d'amplada màxima amb la mida de la finestra */
 	}
+
 	.aficions ul {
 		grid-template-columns: 1fr; /* Passem a 1 columna en el grid d'aficions */
 	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 768px) {
-}
+/* @media only screen and (max-width: 768px) {
+} */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -282,10 +328,12 @@ footer {
 		width: 70vw; /* Amplada del 70% de la mida del viewport o pantalla */
 		height: auto;
 	}
+
 	/*  Específiques per la pàgina index.html */
 	.projectes ul {
 		grid-template-columns: 1fr; /* Passema a 1 columna en el grid de projectes */
 	}
+
 	.projectes ul li {
 		max-width: 70vw; /* Al tenir només una columna, canviem la relació d'amplada màxima amb la mida de la finestra */
 	}
